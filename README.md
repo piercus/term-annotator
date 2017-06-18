@@ -269,6 +269,8 @@ Some notes:
     users' machines. Instead make sure all your files are local
     (ie, in your project folder)
 
+    It also means if that server goes offline or the content changes your app will break.
+
 
 # Cloning this repo
 
