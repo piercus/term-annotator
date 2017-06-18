@@ -247,13 +247,28 @@ Now replace `index.html` and `main.js` with your app.
 
 Some notes:
 
-* Be sure to check out the [electron docs](https://electron.atom.io/docs/).
-* Be aware that you're not running in the browser. You're running in electron. That means you can do things
-  like read and write files directly, things you can't do in a browser.
-* Don't let user code run in Electron. That user code will also be able to read and write files, launch apps, etc.
-* Read the [electron-builder docs](https://github.com/electron-userland/electron-builder) for how to sign your app.
-  If you don't sign your app then the user will be warned that it's an untrusted app and have to take special steps
-  to install it.
+*   Be sure to check out the [electron docs](https://electron.atom.io/docs/).
+
+*   Be aware that you're not running in the browser. You're running in electron. That means you can do things
+    like read and write files directly, things you can't do in a browser.
+
+*   Don't let user code run in Electron. That user code will also be able to read and write files, launch apps, etc.
+
+*   Read the [electron-builder docs](https://github.com/electron-userland/electron-builder) for how to sign your app.
+    If you don't sign your app then the user will be warned that it's an untrusted app and have to take special steps
+    to install it.
+
+*   Don't include remote files.
+
+    In other words don't do something like this
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js"></script>
+
+    That would be downloading 3rdparty code directly into your app.
+    If any one changes that code they could own your machine and all your
+    users' machines. Instead make sure all your files are local
+    (ie, in your project folder)
+
 
 # Cloning this repo
 
