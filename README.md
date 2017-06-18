@@ -3,7 +3,7 @@
 Getting Electron to a shipable app is not completely straight forward. Here's a working
 repo and some terse instructions
 
-Note: The steps below are what I did to create this repo. [See below if clone this repo](#Cloning This Repo)
+Note: The steps below are what I did to create this repo. [See below if cloning this repo](#cloning-this-repo)
 
 1.  Install [node.js](https://nodejs.org)
 2.  Open a terminal or "node command prompt"
@@ -259,7 +259,7 @@ Some notes:
   If you don't sign your app then the user will be warned that it's an untrusted app and have to take special steps
   to install it.
 
-#Cloning this repo
+# Cloning this repo
 
 If you cloned this repo follow these steps to see it work
 
@@ -268,5 +268,5 @@ If you cloned this repo follow these steps to see it work
 3. Clone the repo (or download the zip and unzip)
 4. cd into the repo `cd electron-hello-world`
 5. type `npm install`
-6. Jump to [Try It](#Try-It) above.
+6. Jump to [Try It](#try-it) above.
 
