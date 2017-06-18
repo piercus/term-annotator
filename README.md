@@ -233,11 +233,11 @@ When you're done you should have this
     ├── build
     │   ├── icon.icns
     │   └── icon.ico
+    ├── node_modules   // there's a bunch of stuff in here installed by npm above
     ├── package.json
     └── src
         ├── index.html
-        ├── main.js
-        └── node_modules   // there's a bunch of stuff in here installed by npm above
+        └── main.js
 
 Now type `npm run pack`. This will make an .exe in the `dist` folder if you're on Windows or an app if you're on mac.
 
