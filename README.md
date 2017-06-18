@@ -230,18 +230,14 @@ and then clicked the links to download the ICO and ICNS files and saved them as 
 
 When you're done you should have this
 
-   +-build
-   |  |
-   |  +-icon.ico
-   |  +-icon.icns   // if you want a mac version
-   |
-   +-src
-   |  +-index.html
-   |  +-main.js
-   |
-   +-index.js
-   +-package.json
-   +-node_modules   // there's a bunch of stuff in here installed by npm above
+    ├── build
+    │   ├── icon.icns
+    │   └── icon.ico
+    ├── package.json
+    └── src
+        ├── index.html
+        ├── main.js
+        └── node_modules   // there's a bunch of stuff in here installed by npm above
 
 Now type `npm run pack`. This will make an .exe in the `dist` folder if you're on Windows or an app if you're on mac.
 
