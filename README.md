@@ -3,6 +3,8 @@
 Getting Electron to a shipable app is not completely straight forward. Here's a working
 repo and some terse instructions
 
+Note: The steps below are what I did to create this repo. [See below if clone this repo](#Cloning This Repo)
+
 1.  Install [node.js](https://nodejs.org)
 2.  Open a terminal or "node command prompt"
 3.  Make a folder like `myproject` (`mkdir myproject`)
@@ -176,10 +178,15 @@ repo and some terse instructions
         }
         requestAnimationFrame(render);
 
+
+## Try It
+
 Now try running it. You should be able to type `npm run start` and it should start
 in a window with the devtools opened and an electron window with "Hello World" and a
 time and count. Quit it and type `npm run startp` (p = production). In this case it
 should open fullscreen.
+
+## Build Executable
 
 If it's working now you can follow the steps from the
 [electron-builder "Quick Setup Guide"](https://github.com/electron-userland/electron-builder).
@@ -251,4 +258,15 @@ Some notes:
 * Read the [electron-builder docs](https://github.com/electron-userland/electron-builder) for how to sign your app.
   If you don't sign your app then the user will be warned that it's an untrusted app and have to take special steps
   to install it.
+
+#Cloning this repo
+
+If you cloned this repo follow these steps to see it work
+
+1. Install [node.js](https://nodejs.org).
+2. Open a terminal or "node command prompt"
+3. Clone the repo (or download the zip and unzip)
+4. cd into the repo `cd electron-hello-world`
+5. type `npm install`
+6. Jump to [Try It](#Try-It) above.
 
