@@ -2,6 +2,8 @@ os: unstable
 cache:
   - node_modules
 environment:
+  DEBUG:
+    electron-builder
   matrix:
     - nodejs_version: 9
 install:
