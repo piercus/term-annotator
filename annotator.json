@@ -1,11 +1,3 @@
-# term-annotator
-
-## Usage
-
-Create a configuration file like
-
-*.term-annotator.json**
-```json
 {
 	"source" : {
 		"dir": "./folders/source",
@@ -22,13 +14,3 @@ Create a configuration file like
 		}
 	}
 }
-```
-
-Then run
-```
-term-annotator -c term-annotator.json
-```
-
-Here we go !
-
-<image>
