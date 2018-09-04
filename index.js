@@ -3,6 +3,7 @@ const electron = require("electron")
 const setupMenus = require('./lib/setup-menus');
 const createWindow = require('./lib/create-window');
 const listenEvents = require('./lib/listen-events');
+const createFolders = require('./lib/create-folders')
 const app = electron.app;
 const ipcMain = electron.ipcMain;
 
@@ -12,5 +13,6 @@ app.on('ready', () => {
   const config = require('./annotator.json')
   setupMenus();
   createWindow();
-  listenEvents(config)
+  createFolders(config);
+  listenEvents(config);
 });
