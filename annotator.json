@@ -1,16 +1,107 @@
 {
+	"sort": true,
 	"source" : {
-		"dir": "./folders/source",
-		"recursive": false
+		"dir": "freebox_hd",
+		"recursive": true,
+		"mediaType": "video",
+		"videoSplit": {
+			"startEndRegexp" : "\\w*-([0-9\\.]*)-([0-9\\.]*).segment.mp4",
+			"splitKey": "!",
+			"minDuration": 2
+		},
+		"renaming": {
+			"from": "/",
+			"to": "_xxx_"
+		}
 	},
 	"classes": {
-		"classA": {
-			"key" : "a",
-			"dir": "./folders/classADir"
+		"paddock": {
+			"key" : "c",
+			"dir": "annotatedSegments/paddock"
 		},
-		"classB": {
+		"presenters": {
+			"key" : "w",
+			"dir": "annotatedSegments/presenters"
+		},		
+		"slide": {
+			"key" : "x",
+			"dir": "annotatedSegments/slide"
+		},	
+		"advert": {
+			"key" : "v",
+			"dir": "annotatedSegments/advert"
+		},
+		"interview": {
 			"key" : "b",
-			"dir": "./folders/classBDir"
+			"dir": "annotatedSegments/interview"
+		},
+		"not_usable": {
+			"key" : "n",
+			"dir": "annotatedSegments/not_usable"
+		},
+		"end_horse": {
+			"key" : "t",
+			"dir": "annotatedSegments/end_horse"
+		},
+		"end_carriage": {
+			"key" : "g",
+			"dir": "annotatedSegments/end_carriage"
+		},
+		"group_heat_horse": {
+			"key" : "u",
+			"dir": "annotatedSegments/group_heat_horse"
+		},
+		"group_heat_carriage": {
+			"key" : "j",
+			"dir": "annotatedSegments/group_heat_carriage"
+		},
+		"not_uniform": {
+			"key" : ",",
+			"dir": "annotatedSegments/not_uniform"
+		},
+		"box_start_horse": {
+			"key" : "z",
+			"dir": "annotatedSegments/box_start_horse"
+		},
+		"orthogonal_start_horse": {
+			"key" : "a",
+			"dir": "annotatedSegments/orthogonal_start_horse"
+		},
+		"orthogonal_start_carriage": {
+			"key" : "q",
+			"dir": "annotatedSegments/orthogonal_start_carriage"
+		},
+		"truck_start_carriage": {
+			"key" : "s",
+			"dir": "annotatedSegments/truck_start_carriage"
+		},
+		"walking_horse": {
+			"key" : "i",
+			"dir": "annotatedSegments/walking_horse"
+		},
+		"heat_carriage": {
+			"key" : "d",
+			"dir": "annotatedSegments/heat_carriage"
+		},
+		"heat_horse": {
+			"key" : "e",
+			"dir": "annotatedSegments/heat_horse"
+		},
+		"race_carriage": {
+			"key" : "f",
+			"dir": "annotatedSegments/race_carriage"
+		},
+		"race_horse": {
+			"key" : "r",
+			"dir": "annotatedSegments/race_horse"
+		},
+		"race_obstacle": {
+			"key" : "o",
+			"dir": "annotatedSegments/race_obstacle"
+		},
+		"race_cross": {
+			"key" : "p",
+			"dir": "annotatedSegments/race_cross"
 		}
-	}
+}
 }

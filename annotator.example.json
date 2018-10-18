@@ -1,0 +1,27 @@
+{
+	"sort": true,
+	"source" : {
+		"dir": "my_directory",
+		"recursive": true,
+		"mediaType": "video",
+		"videoSplit": {
+			"startEndRegexp" : "\\w*-([0-9\\.]*)-([0-9\\.]*).mp4",
+			"splitKey": "!",
+			"minDuration": 2
+		},
+		"renaming": {
+			"from": "/",
+			"to": "_xxx_"
+		}
+	},
+	"classes": {
+		"class-a": {
+			"key" : "a",
+			"dir": "myAnnotation/class-a"
+		},
+		"class-b": {
+			"key" : "b",
+			"dir": "myAnnotation/class-b"
+		}
+	}
+}
