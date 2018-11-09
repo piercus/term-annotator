@@ -22,6 +22,35 @@
 		"class-b": {
 			"key" : "b",
 			"dir": "myAnnotation/class-b"
+		},
+		"class-c": {
+			"key" : "c",
+			"dir": "myAnnotation/class-c-<%=isFoo%>-<%=isBar%>",
+			"params" : [{
+					"label": "Is it foo ?",
+					"name": "isFoo",
+					"choices": [{
+							"key": "Y",
+							"label": "yes",
+							"value": "fooTrue"
+						},{
+							"key": "N",
+							"label": "no",
+							"value": "fooFalse"
+					}]
+				},{
+					"label": "Is it bar ?",
+					"name": "isBar",
+					"choices": [{
+							"key": "Y",
+							"label": "yes",
+							"value": "barTrue"
+						},{
+							"key": "N",
+							"label": "no",
+							"value": "barFalse"
+					}]
+				}]
 		}
 	}
 }

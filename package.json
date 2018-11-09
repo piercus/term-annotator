@@ -24,6 +24,7 @@
     }
   },
   "dependencies": {
+    "ejs": "^2.6.1",
     "fluent-ffmpeg": "^2.1.2",
     "mv": "^2.1.1"
   }
