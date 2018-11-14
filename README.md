@@ -25,7 +25,7 @@ Create a configuration file like
 ```
 
 more complex configuration example
-```
+```json
 {
 	"sort": true,
 	"source" : {
