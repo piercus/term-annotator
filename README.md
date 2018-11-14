@@ -26,9 +26,7 @@ Create a configuration file like
 
 Then run
 ```
-term-annotator -c term-annotator.json
+npm run start
 ```
 
 Here we go !
-
-<image>
