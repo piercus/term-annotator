@@ -1,5 +1,25 @@
 # term-annotator
 
+## Installation
+
+1. run in terminal `git clone git@github.com:teamklap/term-annotator.git`
+2. open repo in terminal with code editor
+3. run `npm i` to install dependencies
+
+## Configuration
+
+1. **Add videos** that should be annotated
+	- create new folder in in repo. for example, *data*
+	- copy videos that should be annotated into folder *data*
+	- videos should be renamed to match following name construction: `title-start-end.segment.mp4` or `title-start-end.segment.mp4`. For example: `test-0-30-segment.mp4`
+
+2. **Update configuration file** for term-annotator
+
+	- configuration settings for **term-annotator** are stored in *annotator.json* file
+	- configuration params:
+		- **source**
+		- **classes**
+
 ## Usage
 
 Create a configuration file like
