@@ -41,4 +41,14 @@ For example: press c to chose class1.
 
 Please follow notes, in case of additional issues on class.
 
-5. Check if sesgments were annotated in folder/annotatedsegments/
+5. check if sesgments were annotated in folder/annotatedsegments/
+
+expected folder sructure of annotated video is: 
+
+(A) renaming was not configured
+- folder/annotatedsegments/class1/test-0-16-segment.mp4
+- folder/annotatedsegments/class2/test-17-30-segment.mp4
+
+(B) renaming was not configured
+
+- folder/annotatedsegments/class1/_xxx_home_xxx_user_xxx_Documents_xxx_term-annotator_xxx_folders_xxx_sourse_xxx_test-0-4
