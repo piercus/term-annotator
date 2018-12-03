@@ -28,8 +28,8 @@ _name_ | _description_
 -- | --
 Sources medias | number of videas in data folder
 class1 | name of class
-0 | number of videos in class press c
-name of button on the keybord that should be pressed to chose this class1 |  
+0 | number of videos in class 
+press c | name of button on the keybord that should be pressed to chose this class1 |  
 
 3. 
 
