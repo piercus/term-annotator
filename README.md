@@ -106,16 +106,20 @@ class1 | name of class
 0 | number of videos in class 
 press c | name of button on the keybord that should be pressed to chose this class1 |  
 
-3. **split video** into segments if you see that video-segment contains more than one class.
-   - press pplay to watch whole video
-   - re-run video and split it into segments with key Enter
+3. **split video** into segments if you see that video contains more than one class.
+   - press play to watch whole video
+   - re-run video and press Enter at the moment that you want to cut video
+   ![image](https://user-images.githubusercontent.com/30548447/49391086-54a08980-f733-11e8-981a-99871c05eb54.png)
+   - wait for run of created video segment (this splited video segment will ran automaticaly in 5-10 seconds after splitting)
 
 4. **start annotation**
-- press play again on video player
-- press on corresponding button to choose class for video
+   - press on corresponding button to choose class for video
 _For example: press c to choose class1._ 
 
-Please follow notes, in case of additional issues on class.
+5. continue step 3 and 4 till whole video is annotated
+
+_Please follow notes, in case of additional issues on class._
+![screenshot from 2018-12-03 19-52-32](https://user-images.githubusercontent.com/30548447/49391740-30de4300-f735-11e8-837c-fde97e3c3d09.png)
 
 5. **check if videos were annotated** in folder/annotatedSegments/
 
