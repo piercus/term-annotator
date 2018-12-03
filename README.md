@@ -121,7 +121,7 @@ _For example: press c to choose class1._
 _Please follow notes, in case of additional issues on class._
 ![screenshot from 2018-12-03 19-52-32](https://user-images.githubusercontent.com/30548447/49391740-30de4300-f735-11e8-837c-fde97e3c3d09.png)
 
-5. **check if videos were annotated** in folder/annotatedSegments/
+6. **check if videos were annotated** in folder/annotatedSegments/
 
 expected folder sructure of annotated video is: 
 
