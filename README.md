@@ -9,13 +9,13 @@
 ## Configuration
 
 1. **Add videos** that should be annotated
-	- create new folder in repo. for example, *data*
+	- create new folder in repo. For example, *data*
 	- copy videos that should be annotated into folder *data*
 	- videos should be renamed to match following name construction: `title-start-end.segment.mp4` or `title-start-end.segment.mp4`. For example: `test-0-30-segment.mp4`
 
 2. **Update configuration file** for term-annotator
 	- configuration settings for **term-annotator** are stored in *annotator.json* file
-	- update path to videos in configutration file: `"dir": "./data"`
+	- update path to videos in configuration file: `"dir": "./data/"`
 
 ## Usage
 
