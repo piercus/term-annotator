@@ -119,16 +119,23 @@ _For example: press c to choose class1._
 5. continue step 3 and 4 till whole video is annotated
 
 _Please follow notes, in case of additional issues on class._
+
 ![screenshot from 2018-12-03 19-52-32](https://user-images.githubusercontent.com/30548447/49391740-30de4300-f735-11e8-837c-fde97e3c3d09.png)
 
 6. **check if videos were annotated** in folder/annotatedSegments/
 
-expected folder sructure of annotated video is: 
+    expected folder sructure of annotated video is: 
 
-(A) renaming was not configured
-- folder/annotatedsegments/class1/test-0-16-segment.mp4
-- folder/annotatedsegments/class2/test-17-30-segment.mp4
-
-(B) renaming was configured
-
-- folder/annotatedsegments/class1/_xxx_home_xxx_user_xxx_Documents_xxx_term-annotator_xxx_folders_xxx_sourse_xxx_test-0-4
+    (A) renaming was not configured
+      - folder/annotatedsegments/class1/test-0-16-segment.mp4
+      - folder/annotatedsegments/class2/test-17-30-segment.mp4
+ 
+    (B) renaming was configured
+     configuration
+     ```
+     "renaming": {
+			"from": "/",
+			"to": "_xxx_"
+		}
+     ```
+      - folder/annotatedsegments/class1/_xxx_home_xxx_user_xxx_Documents_xxx_term-annotator_xxx_folders_xxx_sourse_xxx_test-0-4
