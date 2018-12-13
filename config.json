@@ -1,6 +1,7 @@
 {
 	"sort": true,
 	"source" : {
+		"dir": "",
 		"recursive": true,
 		"mediaType": "video",
 		"videoSplit": {
