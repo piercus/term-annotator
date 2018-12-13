@@ -1,7 +1,7 @@
 {
 	"sort": true,
 	"source" : {
-		"dir": "freebox_hd",
+		"dir": "",
 		"recursive": true,
 		"mediaType": "video",
 		"videoSplit": {
@@ -90,10 +90,6 @@
 		"race_carriage": {
 			"key" : "f",
 			"dir": "annotatedSegments/race_carriage"
-		},
-		"race_horse": {
-			"key" : "r",
-			"dir": "annotatedSegments/race_horse"
 		},
 		"race_obstacle": {
 			"key" : "o",

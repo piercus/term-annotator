@@ -2,7 +2,7 @@
 
 ## Usage
 
-Create a configuration file like
+Update configuration file `config.json` like
 
 *.term-annotator.json**
 ```json
@@ -26,9 +26,13 @@ Create a configuration file like
 
 Then run
 ```
-term-annotator -c term-annotator.json
+npm start
 ```
 
 Here we go !
 
-<image>
+
+### Configuration
+
+#### Update path to Src Directory
+run `ctrl+Shift+C` or go to`Menu`-> `Configuration` -> `Add Video Directory` and specify path to your folder with files. 
