@@ -3,8 +3,6 @@
 ## Usage
 
 Update configuration file `config.json` like
-
-*.term-annotator.json**
 ```json
 {
 	"source" : {
