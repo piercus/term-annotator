@@ -1,18 +1,18 @@
-"use strict";
-const electron = require("electron")
+'use strict';
+const electron = require('electron');
+
+const {app} = electron;
 const Store = require('electron-store');
 const setupMenus = require('./lib/setup-menus');
 const createWindow = require('./lib/create-window');
 const listenEvents = require('./lib/listen-events');
-const app = electron.app;
-const ipcMain = electron.ipcMain;
-const store = new Store();
 
-let mainWebContents = null;
+const store = new Store();
+const defaultConf = require('./config');
 
 app.on('ready', () => {
-  store.set('config', require('./annotator.json'));
-  setupMenus();
-  createWindow();
-  listenEvents(store.get('config'));
+	store.set('config',defaultConf);
+	createWindow();
+	setupMenus();
+	listenEvents(store.get('config'));
 });
