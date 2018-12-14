@@ -2,7 +2,7 @@
 
 ## Usage
 
-Update configuration file `config.json` like
+Add configuration file `config.json` like 
 ```json
 {
 	"source" : {
