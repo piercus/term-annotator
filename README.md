@@ -49,6 +49,8 @@ class-name |   | class' configuration |  
 
 **EXAMPLE**	
 ```
+Add configuration file `config.json` like 
+```json
 {
 	"sort": true,
 	"source" : {
@@ -115,6 +117,10 @@ press c | name of button on the keybord that should be pressed to chose this cla
 4. **start annotation**
    - press on corresponding button to choose class for video
 _For example: press c to choose class1._ 
+Then run
+```
+npm start
+```
 
 5. continue step 3 and 4 till whole video is annotated
 
@@ -139,3 +145,8 @@ _Please follow notes, in case of additional issues on class._
 		}
      ```
       - folder/annotatedsegments/class1/_xxx_home_xxx_user_xxx_Documents_xxx_term-annotator_xxx_folders_xxx_sourse_xxx_test-0-4
+
+### Configuration
+
+#### Update path to Src Directory
+run `ctrl+Shift+C` or go to`Menu`-> `Configuration` -> `Add Video Directory` and specify path to your folder with files. 
