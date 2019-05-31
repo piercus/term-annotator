@@ -1,5 +1,4 @@
 # term-annotator
-simple annotator for images and videos
 
 ## Configuration
 
@@ -107,7 +106,11 @@ class-name |   | class' configuration |  
 ## Packaging
 
 1. package repo into application run
-`electron-packger .`
+
+- for Windows : `npm run package-windows
+- for Ubuntu: `package-linux`
+
 2. start app
-`term-annotator.exe`
+- go to folder `./term-annotator-*/`
+- run `term-annotator.exe` file
 
