@@ -6,6 +6,10 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development electron index.js",
     "startp": "cross-env NODE_ENV=production electron index.js",
+    "test": "xo --env=browser",
+    "pack": "build --dir",
+    "dist": "electron-builder --publish never",
+    "publish": "electron-builder --publish onTag",
     "package-windows": "electron-packager . --overwrite --asar --platform=win32 --arch=ia32",
     "package-linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64"
   },
@@ -16,7 +20,8 @@
     "electron": "^2.0.0",
     "electron-builder": "^19.56.0",
     "electron-packager": "^13.1.1",
-    "electron-store": "^2.0.0"
+    "electron-store": "^2.0.0",
+    "mkdirp": "^0.5.1"
   },
   "build": {
     "appId": "my.id",
