@@ -113,5 +113,4 @@ class-name |   | class' configuration |  
 2. start app
 - go to folder `./term-annotator-*/`
 - run `term-annotator.exe` file
-`term-annotator.exe`
 
