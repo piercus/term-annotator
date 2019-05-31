@@ -8,7 +8,7 @@ node_js:
   - stable
 
 script:
-  - npm run publish
+  - npm run test
 
 
 
