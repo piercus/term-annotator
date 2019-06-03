@@ -7,6 +7,13 @@ language: node_js
 node_js:
   - stable
 
+before_install:
+  - npm install -g xo
+
+install:
+  - npm install
+
+
 script:
   - npm run test
 
