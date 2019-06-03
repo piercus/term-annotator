@@ -31,9 +31,10 @@
   },
   "dependencies": {
     "ejs": "^2.6.1",
+    "electron-builder": "^19.56.0",
+    "electron-store": "^2.0.0",
     "fluent-ffmpeg": "^2.1.2",
     "mv": "^2.1.1",
-    "electron-builder": "^19.56.0",
-    "electron-store": "^2.0.0"
+    "xo": "^0.24.0"
   }
 }
