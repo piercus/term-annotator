@@ -48,11 +48,11 @@
           "assets": [
             {
               "path": "term-annotator-app-windows.zip",
-              "label": "term-annotato-app-windows"
+              "label": "term-annotator-app-windows"
             },
             {
               "path": "term-annotator-app-linux.zip",
-              "label": "term-annotato-app-linux"
+              "label": "term-annotator-app-linux"
             }
           ]
         }
