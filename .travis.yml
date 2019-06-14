@@ -1,5 +1,4 @@
 os:
-  - osx
   - linux
 
 language: node_js
@@ -9,6 +8,7 @@ node_js:
 
 before_install:
   - npm install -g xo
+  - sudo apt-get install wine1.6-amd64 zip
 
 install:
   - npm install
@@ -19,6 +19,7 @@ script:
 
 after_success:
   - npm run package-windows
+  - npm run package-linux
   - npm run semantic-release
 
 
