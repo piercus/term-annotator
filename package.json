@@ -48,7 +48,7 @@
         {
           "assets": [
             {
-              "path": "dist/",
+              "path": "term-annotator-linux-x64",
               "label": "distribution"
             }
           ]
