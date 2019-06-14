@@ -105,12 +105,34 @@ class-name |   | class' configuration |  
 
 ## Packaging
 
-1. package repo into application run
+### Local
 
-- for Windows : `npm run package-windows
-- for Ubuntu: `package-linux`
+To package repo into application run: 
 
-2. start app
-- go to folder `./term-annotator-*/`
-- run `term-annotator.exe` file
+	- for Windows : `npm run package-windows
+	- for Ubuntu: `npm run package-linux`
+
+#### Packaged app is stored in:
+	- for Windows : `./term-annotator-app-linux.zip`
+	- for Ubuntu: `./term-annotator-app-windows.zip`
+
+## Release into GitHub assets
+
+Push new changes into master to release new version of app with Semantic-Release
+
+#### Download from GitHub
+
+Download app from Releases' assets: https://github.com/teamklap/term-annotator/releases
+	- for Windows : download `term-annotator-app-windows` asset
+	- for Ubuntu: download `term-annotator-app-linux` asset
+
+## Start app
+1. unzip packaged app: 
+	- for Windows : `unzip term-annotator-app-windows.zip -d .`
+	- for Ubuntu: `unzip term-annotator-app-linux.zip -d .`
+
+2. run app:
+	- for Windows: `term-annotator-win32-ia32/term-annotator.exe`
+	- for Ubuntu: `term-annotator-linux-x64/term-annotator`
+
 
