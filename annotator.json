@@ -2,7 +2,7 @@
 	"sort": false,
 	"mediaType": "image",
 	"source": {
-		"dir": "../sls-node-rush-salad-analysis/tmp/data/fake_client/c761e93b13d5f7696b7b857d2972a598973d74869fc974a46887e9bde2dfa2fe/154357-1/trackGif",
+		"dir": "../player-gifs",
 		"recursive": false
 	},
 	"classes": {
