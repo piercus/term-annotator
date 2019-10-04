@@ -2,7 +2,7 @@
 	"sort": false,
 	"mediaType": "image",
 	"source": {
-		"dir": "../player-gifs",
+		"dir": "../gifs-to-annotate",
 		"recursive": false
 	},
 	"classes": {
