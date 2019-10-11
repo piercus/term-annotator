@@ -60,11 +60,11 @@
 			]
 		},
 		"notClean": {
-			"key": "o",
+			"key": "n",
 			"dir": "../annotated/not-clean"
 		},
-		"notSure": {
-			"key": "n",
+		"mixed": {
+			"key": "m",
 			"dir": "../annotated/not-sure"
 		},
 		"referee": {
