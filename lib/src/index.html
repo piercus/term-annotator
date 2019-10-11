@@ -1,55 +1,95 @@
 <head>
 	<style>
-	img {
-		width: 200px;
-	}
-	#categories {
-	    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	    border-collapse: collapse;
-	    width: 100%;
-	}
+		img {
+			width: 400px;
+		}
 
-	#categories td, #categories th {
-	    border: 1px solid #ddd;
-	    padding: 8px;
-	}
+		#t {
+			display: flex !important;
+			align-items: center !important;
+		}
 
-	#categories tr:nth-child(even){background-color: #f2f2f2;}
+		#categories {
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
 
-	#categories tr:hover {background-color: #ddd;}
+		#categories td,
+		#categories th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
 
-	#categories th {
-	    padding-top: 12px;
-	    padding-bottom: 12px;
-	    text-align: left;
-	    background-color: #4CAF50;
-	    color: white;
-	}
-	.pending{
-		background-color: grey;
-	}
-	.pending #last-category{
-		display: block;
-		text-align: center;
-		font-size: 30pt;
-	}
-	.annotation #last-category{
-		display: none;
-	}
-	.annotation{
-		background-color: white;
-	}
+		#categories tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		#categories tr:hover {
+			background-color: #ddd;
+		}
+
+		#categories th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.pending {
+			background-color: grey;
+		}
+
+		.pending #last-category {
+			display: block;
+			text-align: center;
+			font-size: 30pt;
+		}
+
+		.annotation #last-category {
+			display: none;
+		}
+
+		.annotation {
+			background-color: white;
+		}
+
+		a {
+			text-decoration: none;
+			display: inline-block;
+			padding: 8px 16px;
+
+		}
+
+		a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.next {
+			background-color: #4CAF50;
+			color: white;
+		}
+		.speed {
+			background-color: #4CAF50;
+			color: white;
+		}
 	</style>
 </head>
-<body onload="onReady()" id="status">
-<div id="message"></div>
-<div id="message2"></div>
-<div id="question"></div>
-<img id="img" src=""/>
-<div id='last-category'></div>
-<video id="player" playsinline controls width="100" height="200">
-    <source id="source-player" src="" type="video/mp4">
-</video>
 
-<script src="main.js"></script>
+<body onload="onReady()" id="status">
+	<div id="message"></div>
+	<div id="message2"></div>
+	<div id="question"></div>
+	<div id="t">
+		<a href="#" onclick="changeSpeed(2)" class="speed">&laquo; Slower </a>
+		<img id="img" src="" />
+		<a href="#" onclick="changeSpeed(0.5)" class="speed">Faster &raquo;</a>
+	</div>
+	<div id='last-category'></div>
+	<video id="player" playsinline controls width="100" height="200">
+		<source id="source-player" src="" type="video/mp4">
+	</video>
+
+	<script src="main.js"></script>
 </body>

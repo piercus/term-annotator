@@ -1,5 +1,5 @@
 {
-	"sort": false,
+	"sort": true,
 	"mediaType": "image",
 	"source": {
 		"dir": "../gifs-to-annotate",
