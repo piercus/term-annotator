@@ -1,23 +1,30 @@
 {
-  "name": "myproject",
+  "name": "term-annotator",
   "version": "0.0.3",
-  "description": "my project",
+  "description": "annotator",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development electron index.js",
     "startp": "cross-env NODE_ENV=production electron index.js",
+    "test": "xo --env=browser",
     "pack": "build --dir",
     "dist": "electron-builder --publish never",
-    "publish": "electron-builder --publish onTag"
+    "publish": "electron-builder --publish onTag",
+    "package-windows": "electron-packager . --overwrite --asar --platform=win32 --arch=ia32 && zip -r term-annotator-app-windows.zip term-annotator-win32-ia32",
+    "package-linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 && zip -r term-annotator-app-linux.zip term-annotator-linux-x64", 
+    "semantic-release": "semantic-release"
   },
   "author": "Someone",
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/github": "^5.2.10",
     "cross-env": "^5.1.3",
-    "electron": "^1.8.2",
     "electron-builder": "^19.56.0",
-    "gif-frames": "^1.0.1",
-    "gm": "^1.23.1"
+    "electron": "^2.0.0",
+    "electron-packager": "^13.1.1",
+    "electron-store": "^2.0.0",
+    "mkdirp": "^0.5.1",
+    "semantic-release": "^15.13.12"
   },
   "build": {
     "appId": "my.id",
@@ -27,7 +34,29 @@
   },
   "dependencies": {
     "ejs": "^2.6.1",
+    "electron-builder": "^19.56.0",
+    "electron-store": "^2.0.0",
     "fluent-ffmpeg": "^2.1.2",
-    "mv": "^2.1.1"
+    "mv": "^2.1.1",
+    "xo": "^0.24.0"
+  },
+  "release": {
+    "plugins": [
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "term-annotator-app-windows.zip",
+              "label": "term-annotator-app-windows"
+            },
+            {
+              "path": "term-annotator-app-linux.zip",
+              "label": "term-annotator-app-linux"
+            }
+          ]
+        }
+      ]
+    ]
   }
 }

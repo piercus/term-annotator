@@ -1,0 +1,70 @@
+<head>
+    <style>
+    body { 
+    background: url("https://i.ibb.co/DYbcL7P/form-bck.jpg") no-repeat fixed center; 
+    }
+    .form-style{
+        max-width:400px;
+        text-align: center;
+        margin:30px auto;
+    border-radius:2px;
+        padding:20px;
+        font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;;
+    }
+    .form-style legend {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+        font-family: Edo, serif
+    }
+    .form-style li{
+        display: block;
+        padding: 9px;
+        border:1px solid #DDDDDD;
+        margin-bottom: 15px;
+        border-radius: 3px;
+    }
+    .form-style li:last-child{
+        border:none;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .form-style li > span{
+        background: #F3F3F3;
+        display: block;
+        padding: 1px;
+        margin: 0 -9px -9px -9px;
+        text-align: center;
+        color: #C0C0C0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+    }
+    .form-style input[type=text]{
+        font-size: 1em;
+        height: 40;
+    width: 100%
+    }
+    .form-style input[type=submit],
+    .form-style input[type=button]{
+        background: #576E86;
+        border: none;
+        padding: 8px 10px 8px 10px;
+        border-radius: 5px;
+        color: rgb(246, 250, 255);
+    }
+    </style>
+</head>
+
+<body>
+<form class="form-style" id="settings">
+    <legend>Add Media Directory</legend>
+    <li>
+        <input type="text" id="path" placeholder="">
+        <span>Enter path to the media here</span>
+    </li>
+    <li>
+        <input type="submit" value="Submit" onclick="addfolder()">
+        <input type="button" value="Cancel" onclick="cancel()">
+    </li>
+</form>
+</body>
+<script src="config.js"></script>

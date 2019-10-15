@@ -1,0 +1,197 @@
+{
+	"sort": false,
+	"mediaType": "image",
+	"source": {
+		"dir": "../players",
+		"recursive": false
+	},
+	"classes": {
+		"player": {
+			"key": "p",
+			"dir": "../annotated/<%=firstDigit%>-<%=secondDigit%>-<%=color%>",
+			"params": [
+				{
+					"label": "color",
+					"name": "color",
+					"choices": [
+						{
+							"key": "b",
+							"label": "blue",
+							"value": "blu"
+						},
+						{
+							"key": "r",
+							"label": "red",
+							"value": "red"
+						},
+						{
+							"key": "w",
+							"label": "white",
+							"value": "whi"
+						},
+						{
+							"key": "p",
+							"label": "purple",
+							"value": "pur"
+						},
+						{
+							"key": "g",
+							"label": "green",
+							"value": "gre"
+						},
+						{
+							"key": "y",
+							"label": "yellow",
+							"value": "yel"
+						},
+						{
+							"key": "o",
+							"label": "orange",
+							"value": "ora"
+						},
+						{
+							"key": "l",
+							"label": "black",
+							"value": "bla"
+						},
+						{
+							"key": "a",
+							"label": "gray",
+							"value": "gra"
+						}
+					]
+				},
+				{
+					"label": "firstDigit",
+					"name": "firstDigit",
+					"choices": [
+						{
+							"key": "1",
+							"label": "1",
+							"value": "1"
+						},
+						{
+							"key": "2",
+							"label": "2",
+							"value": "2"
+						},
+						{
+							"key": "3",
+							"label": "3",
+							"value": "3"
+						},
+						{
+							"key": "4",
+							"label": "4",
+							"value": "4"
+						},
+						{
+							"key": "5",
+							"label": "5",
+							"value": "5"
+						},
+						{
+							"key": "6",
+							"label": "6",
+							"value": "6"
+						},
+						{
+							"key": "7",
+							"label": "7",
+							"value": "7"
+						},
+						{
+							"key": "8",
+							"label": "8",
+							"value": "8"
+						},
+						{
+							"key": "9",
+							"label": "9",
+							"value": "9"
+						},
+						{
+							"key": "0",
+							"label": "0",
+							"value": "0"
+						},
+						{
+							"key": "n",
+							"label": "notVisible",
+							"value": "notVisible"
+						}
+					]
+				},
+				{
+					"label": "secondDigit",
+					"name": "secondDigit",
+					"choices": [
+						{
+							"key": "1",
+							"label": "1",
+							"value": "1"
+						},
+						{
+							"key": "2",
+							"label": "2",
+							"value": "2"
+						},
+						{
+							"key": "3",
+							"label": "3",
+							"value": "3"
+						},
+						{
+							"key": "4",
+							"label": "4",
+							"value": "4"
+						},
+						{
+							"key": "5",
+							"label": "5",
+							"value": "5"
+						},
+						{
+							"key": "6",
+							"label": "6",
+							"value": "6"
+						},
+						{
+							"key": "7",
+							"label": "7",
+							"value": "7"
+						},
+						{
+							"key": "8",
+							"label": "8",
+							"value": "8"
+						},
+						{
+							"key": "9",
+							"label": "9",
+							"value": "9"
+						},
+						{
+							"key": "0",
+							"label": "0",
+							"value": "0"
+						},
+						{
+							"key": "n",
+							"label": "notVisible",
+							"value": "notVisible"
+						}
+					]
+				}
+			]
+		},
+		"other": {
+			"key": "o",
+			"dir": "../annotated/other"
+		},
+		"notPlayer": {
+			"key": "n",
+			"dir": "../annotated/not-player"
+		}
+	}
+}
