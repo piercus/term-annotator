@@ -128,8 +128,8 @@ Download app from Releases' assets: https://github.com/teamklap/term-annotator/r
 
 ## Start app
 1. unzip packaged app: 
-	- for Windows : `unzip term-annotator-app-windows.zip -d .`
-	- for Ubuntu: `unzip term-annotator-app-linux.zip -d .`
+	- for Windows : `unzip` with zip manager WinRAR
+	- for Ubuntu: `unzip te5rm-annotator-app-linux.zip -d .`
 
 2. run app:
 	- for Windows: `term-annotator-win32-ia32/term-annotator.exe`
