@@ -109,7 +109,7 @@ class-name |   | class' configuration |  
 
 To package repo into application run: 
 
-	- for Windows : `npm run package-windows
+	- for Windows : `npm run package-windows`
 	- for Ubuntu: `npm run package-linux`
 
 #### Packaged app is stored in:

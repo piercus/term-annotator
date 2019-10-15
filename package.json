@@ -6,12 +6,12 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development electron index.js",
     "startp": "cross-env NODE_ENV=production electron index.js",
-    "test": "xo --env=browser",
+    "lint": "xo --env=browser",
     "pack": "build --dir",
     "dist": "electron-builder --publish never",
     "publish": "electron-builder --publish onTag",
     "package-windows": "electron-packager . --overwrite --asar --platform=win32 --arch=ia32 && zip -r term-annotator-app-windows.zip term-annotator-win32-ia32",
-    "package-linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 && zip -r term-annotator-app-linux.zip term-annotator-linux-x64", 
+    "package-linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 && zip -r term-annotator-app-linux.zip term-annotator-linux-x64",
     "semantic-release": "semantic-release"
   },
   "author": "Someone",
