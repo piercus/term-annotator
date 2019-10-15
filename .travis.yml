@@ -7,7 +7,7 @@ node_js:
   - stable
 
 before_install:
-  - npm install -g xo
+  - npm install -g xo ffbinaries
   - sudo apt-get install wine1.6-amd64 zip
 
 install:
