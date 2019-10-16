@@ -7,8 +7,8 @@
     "start": "cross-env NODE_ENV=development electron index.js",
     "startp": "cross-env NODE_ENV=production electron index.js",
     "lint": "xo --env=browser",
-    "package-windows": "electron-packager . --overwrite --platform=win32 --arch=ia32 && ffbinaries ffmpeg --platform=win-64 --quiet  -o=./term-annotator-win32-ia32 && zip -r term-annotator-app-windows.zip term-annotator-win32-ia32",
-    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 && ffbinaries ffmpeg -p=linux-64 --quiet  -o=./term-annotator-linux-x64 && zip -r term-annotator-app-linux.zip term-annotator-linux-x64",
+    "package-windows": "electron-packager . --overwrite --platform=win32 --arch=ia32 --ignore=^/bin && mkdir ./term-annotator-win32-ia32/bin && cp ./bin/ffmpeg.exe ./term-annotator-win32-ia32/bin/ffmpeg.exe && zip -r term-annotator-app-windows.zip term-annotator-win32-ia32",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --ignore=^/bin && mkdir ./term-annotator-linux-x64/bin && cp  ./bin/ffmpeg ./term-annotator-linux-x64/bin/ffmpeg && && zip -r term-annotator-app-linux.zip term-annotator-linux-x64",
     "semantic-release": "semantic-release"
   },
   "author": "Someone",
