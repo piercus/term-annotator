@@ -36,6 +36,7 @@
     "xo": "^0.24.0"
   },
   "release": {
+    "branch": "tan/9-ident-ability",
     "plugins": [
       [
         "@semantic-release/github",
