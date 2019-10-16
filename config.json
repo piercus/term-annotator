@@ -65,11 +65,11 @@
 		},
 		"mixed": {
 			"key": "m",
-			"dir": "../annotated/not-sure"
+			"dir": "../annotated/mixed"
 		},
-		"referee": {
+		"notPlayer": {
 			"key": "r",
-			"dir": "../annotated/referee"
+			"dir": "../annotated/not-a-player"
 		}
 	}
 }
