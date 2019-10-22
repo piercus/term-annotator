@@ -81,6 +81,10 @@
 			background-color: #4CAF50;
 			color: white;
 		}
+		.import {
+			background-color: #4CAF50;
+			color: white;
+		}
 	</style>
 </head>
 
@@ -94,7 +98,8 @@
 		<a href="#" onclick="changeSpeed(0.5)" class="speed">Faster &raquo;</a>
 	</div>
 	<div>
-		<a href="#" onclick="exportJson()" class="export">Generate Result</a>
+		<a href="#" onclick="exportResults()" class="export">Generate Result</a>
+		<a href="#" onclick="importResults()" class="import">Import Annotation File</a>
 	</div>
 	<div id='last-category'></div>
 	<video id="player" playsinline controls width="100" height="200">
