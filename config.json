@@ -1,8 +1,8 @@
 {
 	"sort": true,
-	"mediaType": "image",
+	"mediaType": "gif",
 	"source": {
-		"dir": "../gifs-to-annotate",
+		"dir": "/home/tan/Documents/klap/gifs-to-annotate",
 		"recursive": false
 	},
 	"classes": {

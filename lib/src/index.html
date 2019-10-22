@@ -8,6 +8,7 @@
 			display: flex !important;
 			align-items: center !important;
 		}
+	
 
 		#categories {
 			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -76,17 +77,24 @@
 			background-color: #4CAF50;
 			color: white;
 		}
+		.export {
+			background-color: #4CAF50;
+			color: white;
+		}
 	</style>
 </head>
 
 <body onload="onReady()" id="status">
-	<div id="message"></div>
-	<div id="message2"></div>
+	<div id="message"></div> <!-- chage-rename -->
+	<div id="message2"></div> <!-- chage-rename -->
 	<div id="question"></div>
 	<div id="gif">
 		<a href="#" onclick="changeSpeed(2)" class="speed">&laquo; Slower </a>
 		<img id="img" src="https://i.ibb.co/f45TRFc/Term-Annotator.jpg" />
 		<a href="#" onclick="changeSpeed(0.5)" class="speed">Faster &raquo;</a>
+	</div>
+	<div>
+		<a href="#" onclick="exportJson()" class="export">Generate Result</a>
 	</div>
 	<div id='last-category'></div>
 	<video id="player" playsinline controls width="100" height="200">
