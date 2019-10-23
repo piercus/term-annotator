@@ -65,6 +65,12 @@
 			padding: 8px 16px;
 
 		}
+		button {
+			text-decoration: none;
+			display: inline-block;
+			padding: 8px 16px;
+
+		}
 
 		a:hover {
 			background-color: #ddd;
@@ -96,14 +102,11 @@
 	<div id="message2"></div> <!-- chage-rename -->
 	<div id="question"></div>
 	<div id="gif">
-		<!-- <a href="#" onclick="changeSpeed(2)" class="speed">&laquo; Slower </a> -->
 		<img id="img" src="https://i.ibb.co/f45TRFc/Term-Annotator.jpg" />
-		<!-- <a href="#" onclick="changeSpeed(0.5)" class="speed">Faster &raquo;</a> -->
 	</div>
 	<div id="config">
-		<a href="#" onclick="exportResults()" class="export">Generate Result</a>
-		<a href="#" onclick="importResults()" class="import">Import Annotation File</a>
-		<a href="#" onclick="importConfig()" class="import">Import Configuration File</a>
+		<button href="#" onclick="exportResults()" class="export">Generate Result</button>
+		<button id="import-config" href="#" onclick="importConfig()" class="import" > Import Configuration File</button>
 	</div>
 	<div id='last-category'></div>
 	<video id="player" playsinline controls width="100" height="200">
