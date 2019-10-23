@@ -8,6 +8,10 @@
 			display: flex !important;
 			align-items: center !important;
 		}
+		#config {
+			margin-top: 50px;
+		}
+	
 
 		#categories {
 			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -61,6 +65,12 @@
 			padding: 8px 16px;
 
 		}
+		button {
+			text-decoration: none;
+			display: inline-block;
+			padding: 8px 16px;
+
+		}
 
 		a:hover {
 			background-color: #ddd;
@@ -76,20 +86,30 @@
 			background-color: #4CAF50;
 			color: white;
 		}
+		.export {
+			background-color: #4CAF50;
+			color: white;
+		}
+		.import {
+			background-color: #4CAF50;
+			color: white;
+		}
 	</style>
 </head>
 
 <body onload="onReady()" id="status">
-	<div id="message"></div>
-	<div id="message2"></div>
+	<div id="message"></div> <!-- chage-rename -->
+	<div id="message2"></div> <!-- chage-rename -->
 	<div id="question"></div>
 	<div id="gif">
-		<a href="#" onclick="changeSpeed(2)" class="speed">&laquo; Slower </a>
 		<img id="img" src="https://i.ibb.co/f45TRFc/Term-Annotator.jpg" />
-		<a href="#" onclick="changeSpeed(0.5)" class="speed">Faster &raquo;</a>
+	</div>
+	<div id="config">
+		<button href="#" onclick="exportResults()" class="export">Generate Result</button>
+		<button id="import-config" href="#" onclick="importConfig()" class="import" > Import Configuration File</button>
 	</div>
 	<div id='last-category'></div>
-	<video id="player" playsinline controls width="100" height="200">
+	<video id="player" playsinline controls width="1" height="1">
 		<source id="source-player" src="" type="video/mp4">
 	</video>
 
