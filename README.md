@@ -138,10 +138,6 @@ class-name |   | class' configuration |  
 - thumbnail is created once first player of category is annotated
 - thunmbnail cam be updated with a click on button `NextImage`.
 
-  Note: img will be selected randomly so it can be duplicated. Please click 2-3 times to update gif if didn't change after first click.  
-
-
-
 ## Packaging
 
 ### Local
