@@ -1,15 +1,58 @@
-# term-annotator
+# Term-Annotator
 
-## Configuration
 
-1. **Add videos** that should be annotated
-	- create new folder in repo. For example, *data*
-	- copy videos that should be annotated into folder *data*
-	- videos should be renamed to match following name construction: `title-start-end.segment.mp4` or `title-start-end.segment.mp4`. For example: `test-0-30-segment.mp4`
+# General
 
-2. **Update configuration file** for term-annotator
-	- configuration settings for **term-annotator** are stored in *annotator.json* file
+Term-Annotator is an application for media (video/images/gifs) annotation.
 
+This application is installed on a laptop and is working locally.
+It is made for images/video/gifs manual [classification](https://en.wikipedia.org/wiki/Statistical_classification) in order to train machine learning on the database.
+
+Basically, term annotator is only moving files from one directory to another in a local computer.
+
+## Main purpose
+
+Term-annotator provides productivty tools for the annotator : 
+* Visualization of images/gifs/videos
+* Keyboard shortcuts for each category
+* Ability to split videos into sub-videos
+* Ability to organize categories using Questions/answers tree
+* Thumbnails display for each categories
+* Display of the number of items in each category in real-time
+
+
+## Usage
+
+1. Load application with this [link](https://drive.google.com/file/d/1V0M0WN6pQ4tAVk-KUmZ6-7264fp6L__x/view?usp=sharing) and unzip into `term-annotator` folder
+2. Load mediafiles to annotate and unzip into new folder 
+3. Run `term-annotator.exe` file from `term-annotator` folder
+4. Import Configuration file:
+       
+      4.1. Click on button `Import Configuration File`
+            <img src="./assets/Screenshot from 2019-10-23 16-04-14.png" width="70%">
+    
+      4.2. in a new window `CHOOSE CONFIGURATION FILE` choose your config file.
+            <img src="./assets/Screenshot from 2019-10-23 18-38-01.png" width="70%">
+    
+      4.3. in a new window `CHOOSE SOURCE DIRECTORY` choose folder with files to annotate
+            <img src="./assets/Screenshot from 2019-10-23 18-38-35.png" width="70%">
+5. First image is displayed to start annotation.
+
+6. when annotation of first image is done, annotated image will be automatically saved in newly created `annotated` folder and removed from original folder where all the images are saved.
+
+7. In annotated folder, image is being stored in folder with name-patterns like : `<team-number>-<player-number>` and `notVisible-notVisible-color` along with `notPlayer` and `other` folder.
+
+<img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-4/markdown/brissot/annotations/urbansoccer/assets/term%20annotation/annotated.JPG" width="70%">
+
+8. Generate Annotation results 
+
+      8.1 click on button `Generate Result`
+
+      8.2 save result as json file. See naming pattern [here](../architecture/rush-bucket.md#tracks-identification-annotation)
+
+### Configuration
+
+Configuration paramenters for the term-annotator are strored in a json file that should be loaded once app is started. 
 
 **EXAMPLE**	
 ```
@@ -88,19 +131,15 @@ class-name |   | class' configuration |  
 
 
 
+### Detailed features
 
+#### Gifs Thumbnails
 
+- thumbnail is created once first player of category is annotated
+- thunmbnail cam be updated with a click on button `NextImage`.
 
+  Note: img will be selected randomly so it can be duplicated. Please click 2-3 times to update gif if didn't change after first click.  
 
-## Usage
-
-1. start app 
-`npm run start`
-
-2. update path to Src Directory
-`ctrl+Shift+C` or go to`Menu`-> `Configuration` -> `Add Video Directory` and specify full path to your folder with files. 
- 
-3. start annotation following instructions on the screen 
 
 
 ## Packaging
@@ -129,10 +168,10 @@ Download app from Releases' assets: https://github.com/teamklap/term-annotator/r
 ## Start app
 1. unzip packaged app: 
 	- for Windows : `unzip` with zip manager WinRAR
-	- for Ubuntu: `unzip te5rm-annotator-app-linux.zip -d .`
+	- for Ubuntu: `unzip term-annotator-app-linux.zip -d .`
 
 2. run app:
-	- for Windows: `term-annotator-win32-ia32/term-annotator.exe`
+	- for Windows: `term-annotator-win32-x64/term-annotator.exe`
 	- for Ubuntu: `term-annotator-linux-x64/term-annotator`
 
 
