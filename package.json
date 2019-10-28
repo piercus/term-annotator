@@ -36,7 +36,6 @@
     "fluent-ffmpeg": "^2.1.2"
   },
   "release": {
-    "branch": "tan/9-ident-ability",
     "plugins": [
       [
         "@semantic-release/github",
