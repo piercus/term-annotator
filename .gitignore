@@ -21,3 +21,5 @@ temp
 *.vtg
 folders
 annotator.json
+*.mp4
+term-annotator-*
