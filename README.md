@@ -1,56 +1,63 @@
-# term-annotator
-
-## Installation
-
-1. run in terminal `git clone git@github.com:teamklap/term-annotator.git`
-2. open repo in terminal with code editor
-3. run `npm i` to install dependencies
-
-## Configuration
-
-1. **Add videos** that should be annotated
-	- create new folder in repo. For example, *data*
-	- copy videos that should be annotated into folder *data*
-	- videos should be renamed to match following name construction: `title-start-end.segment.mp4` or `title-start-end.segment.mp4`. For example: `test-0-30-segment.mp4`
-
-2. **Update configuration file** for term-annotator
-	- configuration settings for **term-annotator** are stored in *annotator.json* file
-	- configuration params: 
-	
-	
-source |   |  
--- | -- | --
-sort |   | if true the images are annotated in the filename alhpabetic order
-dir |   | the output directory where to move annotated images
-recursive |   | play all videos from folder: true/false
-mediaType |   | type of files
-videSplit |   | video splitting settings section
-  | startEndRegexp | foramat of file's name
-  | splitKey | key that should be pressed to split video
-  | minDuration | minumum duration of splitted video degment
-renaming |   | video renaming settings section
-  | from | rename this sign
-  | to | rename into this sign
-  |   |  
+# Term-Annotator
 
 
-classes |   | classes definition |  
--- | -- | -- | --
-class-name |   | class' configuration |  
-  | key | the keyboard key that do this action when pressed |  
-  | dir | the output directory where to move annotated images for this class |  
-  | params | additional params for sub questions to the class |  
-  |   | label | additional question for class
-  |   | name | the name to be used in ejs template
-  |   | choices | the available choices
-  |   | key | key that should be pressed to chose this class
-  |   | label | label of choise
-  |   | value | value to use in ejs template
+# General
+
+Term-Annotator is an application for media (video/images/gifs) annotation.
+
+This application is installed on a laptop and is working locally.
+It is made for images/video/gifs manual [classification](https://en.wikipedia.org/wiki/Statistical_classification) in order to train machine learning on the database.
+
+Basically, term annotator is only moving files from one directory to another in a local computer.
+
+## Main purpose
+
+Term-annotator provides productivty tools for the annotator : 
+* Visualization of images/gifs/videos
+* Keyboard shortcuts for each category
+* Ability to split videos into sub-videos
+* Ability to organize categories using Questions/answers tree
+* Thumbnails display for each categories
+* Display of the number of items in each category in real-time
+
+
+## Usage
+
+1. Load application with this [link](https://drive.google.com/file/d/1V0M0WN6pQ4tAVk-KUmZ6-7264fp6L__x/view?usp=sharing) and unzip into `term-annotator` folder
+2. Load mediafiles to annotate and unzip into new folder 
+3. Run `term-annotator.exe` file from `term-annotator` folder
+4. Import Configuration file:
+       
+      4.1. Click on button `Import Configuration File`
+            <img src="./assets/Screenshot from 2019-10-23 16-04-14.png" width="70%">
+    
+      4.2. in a new window `CHOOSE CONFIGURATION FILE` choose your config file.
+            <img src="./assets/Screenshot from 2019-10-23 18-38-01.png" width="70%">
+    
+      4.3. in a new window `CHOOSE SOURCE DIRECTORY` choose folder with files to annotate
+            <img src="./assets/Screenshot from 2019-10-23 18-38-35.png" width="70%">
+5. First image is displayed to start annotation.
+
+6. when annotation of first image is done, annotated image will be automatically saved in newly created `annotated` folder and removed from original folder where all the images are saved.
+
+7. In annotated folder, image is being stored in folder with name-patterns like : `<team-number>-<player-number>` and `notVisible-notVisible-color` along with `notPlayer` and `other` folder.
+
+<img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-4/markdown/brissot/annotations/urbansoccer/assets/term%20annotation/annotated.JPG" width="70%">
+
+8. Generate Annotation results 
+
+      8.1 click on button `Generate Result`
+
+      8.2 save result as json file. See naming pattern [here](../architecture/rush-bucket.md#tracks-identification-annotation)
+
+### Configuration
+
+Configuration paramenters for the term-annotator are strored in a json file that should be loaded once app is started. 
 
 **EXAMPLE**	
 ```
 {
-	"sort": true,
+	"sort": true,								
 	"source" : {
 		"dir": "my_directory",
 		"recursive": true,
@@ -92,50 +99,75 @@ class-name |   | class' configuration |  
 }
 ```
 
-## Usage
 
-1. run `npm run start`
-2. you'll see new window with video player and panel with options
+source |   |  
+-- | -- | --
+sort |   | if true the images are annotated in the filename alhpabetic order
+dir |   | the input directory whis videos/images to annotate
+recursive |   | play all videos from folder: true/false
+mediaType |   | type of files (video/images)
+videSplit |   | video splitting settings section
+  | startEndRegexp | foramat of file's name
+  | splitKey | key that should be pressed to split video
+  | minDuration | minumum duration of splitted video degment
+renaming |   | video renaming settings section
+  | from | rename this sign
+  | to | rename into this sign
+  |   |  
 
-![screenshot from 2018-12-03 19-36-57](https://user-images.githubusercontent.com/30548447/49390958-fecbe180-f732-11e8-9420-40c1b251aad2.png)
 
-_name_ | _description_
--- | --
-Sources medias | number of videos in data folder
-class1 | name of class
-0 | number of videos in class 
-press c | name of button on the keybord that should be pressed to chose this class1 |  
+classes |   | classes definition |  
+-- | -- | -- | --
+class-name |   | class' configuration |  
+  | key | the keyboard key that do this action when pressed |  
+  | dir | the output directory where to move annotated images for this class |  
+  | params | additional params for sub questions to the class |  
+  |   | label | additional question for class
+  |   | name | the name to be used in ejs template
+  |   | choices | the available choices
+  |   | key | key that should be pressed to chose this class
+  |   | label | label of choise
+  |   | value | value to use in ejs template
 
-3. **split video** into segments if you see that video contains more than one class.
-   - press play to watch whole video
-   - re-run video and press Enter at the moment that you want to cut video
-   ![image](https://user-images.githubusercontent.com/30548447/49391086-54a08980-f733-11e8-981a-99871c05eb54.png)
-   - wait for run of created video segment (this splited video segment will ran automaticaly in 5-10 seconds after splitting)
 
-4. **start annotation**
-   - press on corresponding button to choose class for video
-_For example: press c to choose class1._ 
 
-5. continue step 3 and 4 till whole video is annotated
+### Detailed features
 
-_Please follow notes, in case of additional issues on class._
+#### Gifs Thumbnails
 
-![screenshot from 2018-12-03 19-52-32](https://user-images.githubusercontent.com/30548447/49391740-30de4300-f735-11e8-837c-fde97e3c3d09.png)
+- thumbnail is created once first player of category is annotated
+- thunmbnail cam be updated with a click on button `NextImage`.
 
-6. **check if videos were annotated** in folder/annotatedSegments/
+## Packaging
 
-    expected folder sructure of annotated video is: 
+### Local
 
-    (A) renaming was not configured
-      - folder/annotatedsegments/class1/test-0-16-segment.mp4
-      - folder/annotatedsegments/class2/test-17-30-segment.mp4
- 
-    (B) renaming was configured
-     configuration
-     ```
-     "renaming": {
-			"from": "/",
-			"to": "_xxx_"
-		}
-     ```
-      - folder/annotatedsegments/class1/_xxx_home_xxx_user_xxx_Documents_xxx_term-annotator_xxx_folders_xxx_sourse_xxx_test-0-4
+To package repo into application run: 
+
+	- for Windows : `npm run package-windows`
+	- for Ubuntu: `npm run package-linux`
+
+#### Packaged app is stored in:
+	- for Windows : `./term-annotator-app-linux.zip`
+	- for Ubuntu: `./term-annotator-app-windows.zip`
+
+## Release into GitHub assets
+
+Push new changes into master to release new version of app with Semantic-Release
+
+#### Download from GitHub
+
+Download app from Releases' assets: https://github.com/teamklap/term-annotator/releases
+	- for Windows : download `term-annotator-app-windows` asset
+	- for Ubuntu: download `term-annotator-app-linux` asset
+
+## Start app
+1. unzip packaged app: 
+	- for Windows : `unzip` with zip manager WinRAR
+	- for Ubuntu: `unzip term-annotator-app-linux.zip -d .`
+
+2. run app:
+	- for Windows: `term-annotator-win32-x64/term-annotator.exe`
+	- for Ubuntu: `term-annotator-linux-x64/term-annotator`
+
+
