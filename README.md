@@ -62,7 +62,7 @@ Term-annotator provides productivty tools for the annotator :
 
 ### Configuration
 
-Configuration paramenters for the term-annotator are strored in a json file that should be loaded once app is started. 
+Configuration parameters for the term-annotator are strored in a json file that should be loaded once app is started. 
 
 Configuration file should be shared with the annotator togehter with a data set before the annotation
 
