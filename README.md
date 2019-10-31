@@ -29,13 +29,13 @@ Term-annotator provides productivty tools for the annotator :
 4. Import Configuration file:
        
       4.1. Click on button `Import Configuration File`
-            <img src="./assets/Screenshot from 2019-10-23 16-04-14.png" width="70%">
+            <img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-6/markdown/brissot/annotations/assets/Screenshot from 2019-10-23 16-04-14.png" width="70%">
     
       4.2. in a new window `CHOOSE CONFIGURATION FILE` choose your config file.
-            <img src="./assets/Screenshot from 2019-10-23 18-38-01.png" width="70%">
+            <img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-6/markdown/brissot/annotations/assets/Screenshot from 2019-10-23 18-38-01.png" width="70%">
     
       4.3. in a new window `CHOOSE SOURCE DIRECTORY` choose folder with files to annotate
-            <img src="./assets/Screenshot from 2019-10-23 18-38-35.png" width="70%">
+            <img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-6/markdown/brissot/annotations/assets/Screenshot from 2019-10-23 18-38-35.png" width="70%">
 5. First image is displayed to start annotation.
 
 6. when annotation of first image is done, annotated image will be automatically saved in newly created `annotated` folder and removed from original folder where all the images are saved.
@@ -50,9 +50,21 @@ Term-annotator provides productivty tools for the annotator :
 
       8.2 save result as json file. See naming pattern [here](../architecture/rush-bucket.md#tracks-identification-annotation)
 
+
+### Detailed features
+
+#### Gifs Thumbnails
+
+- thumbnail is created once first player of category is annotated
+- thumbnail cam be updated with a click on button `NextImage`.
+
+
+
 ### Configuration
 
 Configuration paramenters for the term-annotator are strored in a json file that should be loaded once app is started. 
+
+Configuration file should be shared with the annotator togehter with a data set before the annotation
 
 **EXAMPLE**	
 ```
@@ -131,12 +143,9 @@ class-name |   | class' configuration |  
 
 
 
-### Detailed features
 
-#### Gifs Thumbnails
 
-- thumbnail is created once first player of category is annotated
-- thunmbnail cam be updated with a click on button `NextImage`.
+
 
 ## Packaging
 
