@@ -60,7 +60,7 @@
 			]
 		},
 		"notClean": {
-			"key": "n",
+			"key": "c",
 			"dir": "../annotated/not-clean"
 		},
 		"mixed": {
@@ -68,8 +68,12 @@
 			"dir": "../annotated/mixed"
 		},
 		"notPlayer": {
-			"key": "r",
+			"key": "n",
 			"dir": "../annotated/not-a-player"
+		},
+		"reannotate": {
+			"key": "r",
+			"dir": "../annotated/reannotate"
 		}
 	}
 }
