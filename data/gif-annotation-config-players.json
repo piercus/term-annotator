@@ -6,41 +6,45 @@
 		"recursive": false
 	},
 	"classes": {
-		"player1": {
+		"player01": {
 			"key": "1",
 			"dir": "../annotated/1"
 		},
-		"player2": {
+		"player02": {
 			"key": "2",
 			"dir": "../annotated/2"
 		},
-		"player3": {
+		"player03": {
 			"key": "3",
 			"dir": "../annotated/3"
 		},
-		"player4": {
+		"player04": {
 			"key": "4",
 			"dir": "../annotated/4"
 		},
-		"player5": {
+		"player05": {
 			"key": "5",
 			"dir": "../annotated/5"
 		},
-		"player6": {
+		"player06": {
 			"key": "6",
 			"dir": "../annotated/6"
 		},
-		"player7": {
+		"player07": {
 			"key": "7",
 			"dir": "../annotated/7"
 		},
-		"player8": {
+		"player08": {
 			"key": "8",
 			"dir": "../annotated/8"
 		},
-		"player9": {
+		"player09": {
 			"key": "9",
 			"dir": "../annotated/9"
+		},
+		"player10": {
+			"key": "0",
+			"dir": "../annotated/10"
 		},
 		"notClean": {
 			"key": "c",
