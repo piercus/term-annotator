@@ -1,0 +1,66 @@
+{
+	"sort": true,
+	"mediaType": "gif",
+	"source": {
+		"dir": "",
+		"recursive": false
+	},
+	"classes": {
+		"player01": {
+			"key": "1",
+			"dir": "../annotated/1"
+		},
+		"player02": {
+			"key": "2",
+			"dir": "../annotated/2"
+		},
+		"player03": {
+			"key": "3",
+			"dir": "../annotated/3"
+		},
+		"player04": {
+			"key": "4",
+			"dir": "../annotated/4"
+		},
+		"player05": {
+			"key": "5",
+			"dir": "../annotated/5"
+		},
+		"player06": {
+			"key": "6",
+			"dir": "../annotated/6"
+		},
+		"player07": {
+			"key": "7",
+			"dir": "../annotated/7"
+		},
+		"player08": {
+			"key": "8",
+			"dir": "../annotated/8"
+		},
+		"player09": {
+			"key": "9",
+			"dir": "../annotated/9"
+		},
+		"player10": {
+			"key": "0",
+			"dir": "../annotated/10"
+		},
+		"notClean": {
+			"key": "c",
+			"dir": "../annotated/not-clean"
+		},
+		"mixed": {
+			"key": "m",
+			"dir": "../annotated/mixed"
+		},
+		"notPlayer": {
+			"key": "n",
+			"dir": "../annotated/not-a-player"
+		},
+		"reannotate": {
+			"key": "r",
+			"dir": "../annotated/reannotate"
+		}
+	}
+}
