@@ -85,7 +85,9 @@ Configuration file should be shared with the annotator togehter with a data set 
 			"to": "_xxx_"
 		}
 	},
-	"destDir"
+	"destination": {
+	        "destSubDir":"annotated"
+		},
 	"classes": {
 		"class-a": {
 			"key" : "a",
