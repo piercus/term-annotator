@@ -2,8 +2,11 @@
 	"sort": true,
 	"mediaType": "gif",
 	"source": {
-		"dir": "",
+		"subDir": "",
 		"recursive": false
+	},
+	"destination": {
+		"destSubDir": ""
 	},
 	"classes": {
 		"players": {

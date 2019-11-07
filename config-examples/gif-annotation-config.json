@@ -2,9 +2,11 @@
 	"sort": true,
 	"mediaType": "gif",
 	"source": {
+		"subDir": "toannotate",
 		"dir": "",
 		"recursive": false
 	},
+	"destSubDir": "annotated",
 	"classes": {
 		"players": {
 			"key": "p",

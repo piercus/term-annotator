@@ -74,6 +74,7 @@ Configuration file should be shared with the annotator togehter with a data set 
 		"dir": "my_directory",
 		"recursive": true,
 		"mediaType": "video",
+		"subDir":"toannotate"
 		"videoSplit": {
 			"startEndRegexp" : "\\w*-([0-9\\.]*)-([0-9\\.]*).mp4",
 			"splitKey": "!",
@@ -84,6 +85,7 @@ Configuration file should be shared with the annotator togehter with a data set 
 			"to": "_xxx_"
 		}
 	},
+	"destDir"
 	"classes": {
 		"class-a": {
 			"key" : "a",
