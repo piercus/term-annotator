@@ -1,0 +1,63 @@
+{
+	"sort": true,
+	"mediaType": "gif",
+	"source": {
+		"dir": "",
+		"recursive": false
+	},
+	"classes": {
+		"players": {
+			"key": "p",
+			"dir": "../annotated/<%=number%>",
+			"params": [
+				{
+					"label": "number",
+					"name": "number",
+					"choices": [
+						{
+							"key": "1",
+							"label": "player1",
+							"value": "1"
+						},
+						{
+							"key": "2",
+							"label": "player2",
+							"value": "2"
+						},
+						{
+							"key": "3",
+							"label": "player3",
+							"value": "3"
+						},
+						{
+							"key": "4",
+							"label": "player4",
+							"value": "4"
+						},
+						{
+							"key": "5",
+							"label": "player5",
+							"value": "5"
+						}
+					]
+				}
+			]
+		},
+		"notClean": {
+			"key": "c",
+			"dir": "../annotated/not-clean"
+		},
+		"mixed": {
+			"key": "m",
+			"dir": "../annotated/mixed"
+		},
+		"notPlayer": {
+			"key": "n",
+			"dir": "../annotated/not-a-player"
+		},
+		"reannotate": {
+			"key": "r",
+			"dir": "../annotated/reannotate"
+		}
+	}
+}

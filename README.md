@@ -143,9 +143,62 @@ class-name |   | class' configuration |  
 
 
 
+## Import/Export Result
 
+### Results format
 
+```
+{
+  "epoch": "2019-10-25T11:13:02.723Z",
+  "folders": {
+    "dir-path" : {
+            "thumbnail": null,
+            "filenames": [
+              "a"
+            ]          
+     } 
+     ....
+}
+ 
+```
 
+`epoch` - an import timestamp
+
+`dir-path` - a path to dir for a category. Each annotated category has separate directory
+
+`filenames` - a list of files inside dir
+
+`thumbnail` - a thumbnail stored inside dir 
+
+#### Example
+
+```
+{
+  "epoch": "2019-10-25T11:13:02.723Z",
+  "folders": {
+    "../annotated/1-5" : {
+            "thumbnail": null,
+            "filenames": [
+              "a",
+              "b",
+              "c",
+              "w"
+            ]          
+     },
+     ...
+    "../annotated/notClean":
+      {
+        "filenames": [
+          "q",
+          "p",
+          "r",
+          "s"
+        ],
+        "thumbnail": s.png
+      }  
+   }
+}
+```
 
 ## Packaging
 
