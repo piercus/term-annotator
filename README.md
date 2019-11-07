@@ -163,8 +163,11 @@ class-name |   | class' configuration |  
 ```
 
 `epoch` - an import timestamp
-`dir-path` - a path to dir for a category. Each annotated category has separate directory. 
+
+`dir-path` - a path to dir for a category. Each annotated category has separate directory
+
 `filenames` - a list of files inside dir
+
 `thumbnail` - a thumbnail stored inside dir 
 
 #### Example
