@@ -204,6 +204,19 @@ class-name |   | class' configuration |  
 }
 ```
 
+### Export Result
+
+1. click on button `Generate Result`
+2. save result as json file. See naming pattern [here](../architecture/rush-bucket.md#tracks-identification-annotation)
+
+### Import Result
+
+1. Go to app's Menu -> Advanced -> Import Annotation File
+2. Choose a Result file to be exported in new window
+3. Choose a Source Directory in new window
+4. Choose an Destination directory in new window
+
+
 ## Packaging
 
 ### Local
