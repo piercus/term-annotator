@@ -2,65 +2,68 @@
 	"sort": true,
 	"mediaType": "gif",
 	"source": {
-		"dir": "",
+		"subDir": "toannotate",
 		"recursive": false
+	},
+	"destination": {
+		"destSubDir": "annotated"
 	},
 	"classes": {
 		"player01": {
 			"key": "1",
-			"dir": "../annotated/1"
+			"dir": "1"
 		},
 		"player02": {
 			"key": "2",
-			"dir": "../annotated/2"
+			"dir": "2"
 		},
 		"player03": {
 			"key": "3",
-			"dir": "../annotated/3"
+			"dir": "3"
 		},
 		"player04": {
 			"key": "4",
-			"dir": "../annotated/4"
+			"dir": "4"
 		},
 		"player05": {
 			"key": "5",
-			"dir": "../annotated/5"
+			"dir": "5"
 		},
 		"player06": {
 			"key": "6",
-			"dir": "../annotated/6"
+			"dir": "6"
 		},
 		"player07": {
 			"key": "7",
-			"dir": "../annotated/7"
+			"dir": "7"
 		},
 		"player08": {
 			"key": "8",
-			"dir": "../annotated/8"
+			"dir": "8"
 		},
 		"player09": {
 			"key": "9",
-			"dir": "../annotated/9"
+			"dir": "9"
 		},
 		"player10": {
 			"key": "0",
-			"dir": "../annotated/10"
+			"dir": "10"
 		},
 		"notClean": {
 			"key": "c",
-			"dir": "../annotated/not-clean"
+			"dir": "not-clean"
 		},
 		"mixed": {
 			"key": "m",
-			"dir": "../annotated/mixed"
+			"dir": "mixed"
 		},
 		"notPlayer": {
 			"key": "n",
-			"dir": "../annotated/not-a-player"
+			"dir": "not-a-player"
 		},
 		"reannotate": {
 			"key": "r",
-			"dir": "../annotated/reannotate"
+			"dir": "reannotate"
 		}
 	}
 }

@@ -2,13 +2,16 @@
 	"sort": true,
 	"mediaType": "gif",
 	"source": {
-		"dir": "",
+		"subDir": "",
 		"recursive": false
+	},
+	"destination": {
+		"destSubDir": ""
 	},
 	"classes": {
 		"players": {
 			"key": "p",
-			"dir": "../annotated/<%=number%>",
+			"dir": "<%=number%>",
 			"params": [
 				{
 					"label": "number",
@@ -45,19 +48,19 @@
 		},
 		"notClean": {
 			"key": "c",
-			"dir": "../annotated/not-clean"
+			"dir": "not-clean"
 		},
 		"mixed": {
 			"key": "m",
-			"dir": "../annotated/mixed"
+			"dir": "mixed"
 		},
 		"notPlayer": {
 			"key": "n",
-			"dir": "../annotated/not-a-player"
+			"dir": "not-a-player"
 		},
 		"reannotate": {
 			"key": "r",
-			"dir": "../annotated/reannotate"
+			"dir": "reannotate"
 		}
 	}
 }

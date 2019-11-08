@@ -3,31 +3,16 @@
 	"mediaType": "gif",
 	"source": {
 		"subDir": "toannotate",
-		"dir": "",
 		"recursive": false
 	},
-	"destSubDir": "annotated",
+	"destination": {
+		"destSubDir": "annotated"
+	},
 	"classes": {
 		"players": {
 			"key": "p",
-			"dir": "../annotated/<%=team%>-<%=number%>",
+			"dir": "<%=number%>",
 			"params": [
-				{
-					"label": "team",
-					"name": "team",
-					"choices": [
-						{
-							"key": "1",
-							"label": "1",
-							"value": "1"
-						},
-						{
-							"key": "2",
-							"label": "2",
-							"value": "2"
-						}
-					]
-				},
 				{
 					"label": "number",
 					"name": "number",
@@ -63,19 +48,19 @@
 		},
 		"notClean": {
 			"key": "c",
-			"dir": "../annotated/not-clean"
+			"dir": "not-clean"
 		},
 		"mixed": {
 			"key": "m",
-			"dir": "../annotated/mixed"
+			"dir": "mixed"
 		},
 		"notPlayer": {
 			"key": "n",
-			"dir": "../annotated/not-a-player"
+			"dir": "not-a-player"
 		},
 		"reannotate": {
 			"key": "r",
-			"dir": "../annotated/reannotate"
+			"dir": "reannotate"
 		}
 	}
 }
