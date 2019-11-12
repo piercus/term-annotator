@@ -11,39 +11,39 @@
 	"classes": {
 		"player01": {
 			"key": "1",
-			"dir": "1"
+			"dir": "1-1_TANx1-1_SMI"
 		},
 		"player02": {
 			"key": "2",
-			"dir": "2"
+			"dir": "1-2_TANx1-4_SMI"
 		},
 		"player03": {
 			"key": "3",
-			"dir": "3"
+			"dir": "1-3_TANx1-3_SMI"
 		},
 		"player04": {
 			"key": "4",
-			"dir": "4"
+			"dir": "1-5_TANx1-5_SMI"
 		},
 		"player05": {
 			"key": "5",
-			"dir": "5"
+			"dir": "2-1_TANx2-4_SMI"
 		},
 		"player06": {
 			"key": "6",
-			"dir": "6"
+			"dir": "2-2_TANx2-1_SMI"
 		},
 		"player07": {
 			"key": "7",
-			"dir": "7"
+			"dir": "2-3_TANx2-2_SMI"
 		},
 		"player08": {
 			"key": "8",
-			"dir": "8"
+			"dir": "2-4_TANx2-5_SMI"
 		},
 		"player09": {
 			"key": "9",
-			"dir": "9"
+			"dir": "2-5_TANx2-3_SMI"
 		},
 		"player10": {
 			"key": "0",
