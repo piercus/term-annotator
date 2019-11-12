@@ -64,7 +64,7 @@ Term-annotator provides productivty tools for the annotator :
 
 Configuration parameters for the term-annotator are strored in a json file that should be loaded once app is started. 
 
-Configuration file should be shared with the annotator togehter with a data set before the annotation
+Configuration file should be shared with the annotator together with a data set before the annotation
 
 **EXAMPLE**	
 ```
@@ -147,7 +147,7 @@ class-name |   | class' configuration |  
 
 
 
-## Import/Export Result
+## Import/Export Results
 
 ### Results format
 
@@ -160,7 +160,8 @@ class-name |   | class' configuration |  
             "filenames": [
               "a"
             ]          
-     } 
+     },
+  "termAnnotatorConfig": {...}   
      ....
 }
  
@@ -173,6 +174,9 @@ class-name |   | class' configuration |  
 `filenames` - a list of files inside dir
 
 `thumbnail` - a thumbnail stored inside dir 
+
+`termAnnotatorConfig` - a configuration for the correction workflow
+
 
 #### Example
 
@@ -200,7 +204,23 @@ class-name |   | class' configuration |  
         ],
         "thumbnail": s.png
       }  
-   }
+   },
+   "termAnnotatorConfig": {
+	"sort": true,
+	"mediaType": "gif",
+	"source": {
+		"subDir": "toannotate",
+		"recursive": false
+	},
+	"destination": {
+		"destSubDir": "annotated"
+	},
+	"classes": {
+		"player01": {
+			"key": "1",
+			"dir": "1-1_TANx1-1_SMI"
+		}
+	}
 }
 ```
 
@@ -213,8 +233,8 @@ class-name |   | class' configuration |  
 
 1. Go to app's Menu -> Advanced -> Import Annotation File
 2. Choose a Result file to be exported in new window
-3. Choose a Source Directory in new window
-4. Choose an Destination directory in new window
+3. Choose a Source Directory in new window (`<name-of-dataset/toannotate>`)
+4. Choose an Destination directory in new window (`<name-of-dataset/annotated>`)
 
 
 ## Packaging
