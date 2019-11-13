@@ -13,4 +13,4 @@ const {sourceFolder} = program;
 
 const importResults = require('../lib/helpers/import-results');
 
-return importResults({destFolder, sourceFolder, resultsFilepath});
+importResults({destFolder, sourceFolder, resultsFilepath});
