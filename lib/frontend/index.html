@@ -8,10 +8,11 @@
 			display: flex !important;
 			align-items: center !important;
 		}
+
 		#config {
 			margin-top: 50px;
 		}
-	
+
 
 		#categories {
 			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -65,6 +66,7 @@
 			padding: 8px 16px;
 
 		}
+
 		button {
 			text-decoration: none;
 			display: inline-block;
@@ -82,14 +84,11 @@
 			color: white;
 		}
 
-		.speed {
-			background-color: #4CAF50;
-			color: white;
-		}
 		.export {
 			background-color: #4CAF50;
 			color: white;
 		}
+
 		.import {
 			background-color: #4CAF50;
 			color: white;
@@ -100,13 +99,15 @@
 <body onload="onReady()" id="status">
 	<div id="mainCategoriesTable"></div>
 	<div id="subCategoriesTable"></div>
+	<div id="addNewClassBtn"></div>
+	<!-- <button onclick="openAddNewClassWindow()">Add New Class</button> -->
 	<div id="question"></div>
 	<div id="gif">
 		<img id="img" src="https://i.ibb.co/f45TRFc/Term-Annotator.jpg" />
 	</div>
 	<div id="config">
 		<button href="#" onclick="exportResults()" class="export">Generate Result</button>
-		<button id="import-config" href="#" onclick="importConfig()" class="import" > Import Configuration File</button>
+		<button id="import-config" href="#" onclick="importConfig()" class="import"> Import Configuration File</button>
 	</div>
 	<div id='last-category'></div>
 	<video id="player" playsinline controls width="1" height="1">
