@@ -11,43 +11,53 @@
 	"classes": {
 		"player01": {
 			"key": "1",
-			"dir": "1-1_TANx1-1_SMI"
+			"dir": "player01",
+			"description": "red jersey, red shorts, wthite t-shirt, white soks, black shoes, number 1 on a jersey"
 		},
 		"player02": {
 			"key": "2",
-			"dir": "1-2_TANx1-4_SMI"
+			"dir": "player02",
+			"description": "red jersey, white shorts, white t-shirt, number 4 on a jersey"
 		},
 		"player03": {
 			"key": "3",
-			"dir": "1-3_TANx1-3_SMI"
+			"dir": "player03",
+			"description": "red jersey, black t-shirt, black shorts, number 3 on a jersey"
 		},
 		"player04": {
 			"key": "4",
-			"dir": "1-5_TANx1-5_SMI"
+			"dir": "player04",
+			"description": "red jersey, gray t-shirt, black shorts, number 5 on a jersey"
 		},
 		"player05": {
 			"key": "5",
-			"dir": "2-1_TANx2-4_SMI"
+			"dir": "player05",
+			"description": "red jersey, black shoes, red shorts, number2 on a jersey"
 		},
 		"player06": {
 			"key": "6",
-			"dir": "2-2_TANx2-1_SMI"
+			"dir": "player06",
+			"description": "blue jersey,  white t-shirt, white soks, gray shorts, number 4 on a jersey"
 		},
 		"player07": {
 			"key": "7",
-			"dir": "2-3_TANx2-2_SMI"
+			"dir": "player07",
+			"description": "blue jersey, black t-shirt, blue soks, white shorts, white shoes, number 1 on a jersey"
 		},
 		"player08": {
 			"key": "8",
-			"dir": "2-4_TANx2-5_SMI"
+			"dir": "player08",
+			"description": "blue jersey, black t-shirt , black shorts, 2-colors soks, number 2 on a jersey"
 		},
 		"player09": {
 			"key": "9",
-			"dir": "2-5_TANx2-3_SMI"
+			"dir": "player09",
+			"description": "blue jersey in a stripes, black shorts, white shoes, number 5 on jersey"
 		},
 		"player10": {
 			"key": "0",
-			"dir": "10"
+			"dir": "player10",
+			"description": "blue jersey with a white stripe on a sleeve, white shorts, blue socks, number 3 on a jersey"
 		},
 		"notClean": {
 			"key": "c",

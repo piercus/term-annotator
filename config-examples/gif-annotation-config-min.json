@@ -1,0 +1,12 @@
+{
+    "sort": true,
+    "mediaType": "gif",
+    "source": {
+        "subDir": "toannotate",
+        "recursive": false
+    },
+    "destination": {
+        "destSubDir": "annotated"
+    },
+    "classes": {}
+}
