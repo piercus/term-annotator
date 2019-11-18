@@ -25,31 +25,35 @@ Term-annotator provides productivty tools for the annotator :
 
 1. Load application with this [link](https://drive.google.com/file/d/1V0M0WN6pQ4tAVk-KUmZ6-7264fp6L__x/view?usp=sharing) and unzip into `term-annotator` folder
 2. Load mediafiles to annotate and unzip into new folder 
+    - Data Structure:
+      - files to annotatate are stored inside subfolder **toannotate** (`<data-set-name>/toannotate/<*.gif>`)
+      - annotated files are stored inside subfolder **annotated** (`<data-set-name>/annotated/<category-name>/<*.gif>`)
 3. Run `term-annotator.exe` file from `term-annotator` folder
-4. Import Configuration file:
+### Start Annotation:
        
-      4.1. Click on button `Import Configuration File`
-            <img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-6/markdown/brissot/annotations/assets/Screenshot from 2019-10-23 16-04-14.png" width="70%">
-    
-      4.2. in a new window `CHOOSE CONFIGURATION FILE` choose your config file.
-            <img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-6/markdown/brissot/annotations/assets/Screenshot from 2019-10-23 18-38-01.png" width="70%">
-    
-      4.3. in a new window `CHOOSE SOURCE DIRECTORY` choose folder with files to annotate
-            <img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-6/markdown/brissot/annotations/assets/Screenshot from 2019-10-23 18-38-35.png" width="70%">
-5. First image is displayed to start annotation.
+   1. Click on button `Start Annotation`    
+   2. in a new window `CHOOSE SOURCE DIRECTORY` choose **Directory Folder**   
+   3. in a new window `CHOOSE CONFIG FILE`:
+      - first-run of the annotation : choose a configuration file in a new window
+	  - restarted annotation: 
+	    - **continue with a saved config** - to start with same config as before app's restart
+	    - **continue with a new config** - to start app with a fresh config
+	    
+* *temporary config is saved inside main directory <.term-annotator.json>*
 
-6. when annotation of first image is done, annotated image will be automatically saved in newly created `annotated` folder and removed from original folder where all the images are saved.
+*First image is displayed to start annotation.*
 
-7. In annotated folder, image is being stored in folder with name-patterns like : `<team-number>-<player-number>` and `notVisible-notVisible-color` along with `notPlayer` and `other` folder.
 
-<img src="https://github.com/teamklap/wiki/blob/TaniaPash-patch-4/markdown/brissot/annotations/urbansoccer/assets/term%20annotation/annotated.JPG" width="70%">
+### Generate Annotation results 
 
-8. Generate Annotation results 
+   1. click on button `Generate Result`
+   2. save result as json file. See naming pattern [here](../architecture/rush-bucket.md#tracks-identification-annotation)
 
-      8.1 click on button `Generate Result`
+### Import Annotation
 
-      8.2 save result as json file. See naming pattern [here](../architecture/rush-bucket.md#tracks-identification-annotation)
-
+   1. click on button `Import Annotation`
+   2. in a new window `CHOOSE ANNOTATION FILE`: choose file to import
+   3. in a new window `CHOOSE SOURCE DIRECTORY` choose **Directory Folder**
 
 ### Detailed features
 
