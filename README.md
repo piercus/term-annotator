@@ -66,7 +66,7 @@ Term-annotator provides productivty tools for the annotator :
 
 ## Data structure
 
-Data structure can be sut with a app's configuration:
+Data structure is set with a app's configuration:
 - `source.subdir` - a source subdirectory with files to annotate
 - `destination.destSubDir` - a source subdirectory with annotated files
 
