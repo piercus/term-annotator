@@ -36,8 +36,9 @@ Term-annotator provides productivty tools for the annotator :
    3. in a new window `CHOOSE CONFIG FILE`:
       - first-run of the annotation : choose a configuration file in a new window
 	  - restarted annotation: 
-	    - **continue with a saved config** - to start with same config as before app's restart
-	    - **continue with a new config** - to start app with a fresh config
+	    - **Load a Previous Config** - to start with same config as before app's restart
+	    - **Load  new Config file** - to start app with a new config file
+	    - **Start with an empty Config** - to start app with an empty Config file
 	    
 * *temporary config is saved inside main directory <.term-annotator.json>*
 
