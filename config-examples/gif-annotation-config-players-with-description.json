@@ -1,0 +1,79 @@
+{
+	"sort": true,
+	"mediaType": "gif",
+	"source": {
+		"subDir": "toannotate",
+		"recursive": false
+	},
+	"destination": {
+		"destSubDir": "annotated"
+	},
+	"classes": {
+		"player01": {
+			"key": "1",
+			"dir": "player01",
+			"description": "red jersey,number 1 on a jersey,white t-shirt,red shorts with a white stripes,white soks,black shoes,white skin,normal 2-3 cm haircut,light-brown hair color,~70-75kg weight,~1.85m height"
+		},
+		"player02": {
+			"key": "2",
+			"dir": "player02",
+			"description": "red jersey,number 4 on a jersey,white t-shirt with a long sleeves,white shorts,white short soks,red shoes,tan skin,normal 2-3 cm haircut,dark-brown hair,~80kg weight,~1.85m height"
+		},
+		"player03": {
+			"key": "3",
+			"dir": "player03",
+			"description": "red jersey,number 3 on a jersey,dark-blue t-shirt with a white stripe on a sleeve,black shorts,black soks,black shoes with a big white brandmark,tan skin,1cm haircut,dark hair color,~100kg weight,1.75m height"
+		},
+		"player04": {
+			"key": "4",
+			"dir": "player04",
+			"description": "red jersey,number 5 on a jersey,gray t-shirt,black shorts,white soks,black shoes,tan skin,5cm haircut,light-brown hair color,~70-75kg weight,1.75m height"
+		},
+		"player05": {
+			"key": "5",
+			"dir": "player05",
+			"description": "red jersey,number 2 on a jersey,white t-shirt,red shorts,black soks,black shoes with a big white brandmark,tan skin,2cm haircut,dark-brown haircolor,~80 kg weight,1.78m height"
+		},
+		"player06": {
+			"key": "6",
+			"dir": "player06",
+			"description": "blue jersey,number 4 on a jersey,white t-shirt,gray shorts with a white stripe,white long soks,gray shoes,tan skin,1cm haircut,dark-brown hair,~70-75kg weight,1.7m height"
+		},
+		"player07": {
+			"key": "7",
+			"dir": "player07",
+			"description": "blue jersey ,number 1 on a jersey,black t-shirt,white shorts,blue long soks,white shoes,white skin,1cm haircut,dark-brown hair,~100kg weight,1.75m height"
+		},
+		"player08": {
+			"key": "8",
+			"dir": "player08",
+			"description": "blue jersey ,number 2 on a jersey,black t-shirt,black shorts,long socks in a black-white horizontal stripes,black shoes,tan skin,2-3cm haircut,dark-brown hair,~80kg weight,1.75m height"
+		},
+		"player09": {
+			"key": "9",
+			"dir": "player09",
+			"description": "blue jersey in a stripes,number 5 on a jersey,t-shirt with balck-white stripes,black shorts,short black soks,red-white shoes,white skin,4-5cm haircut,dark-brown hair,~80kg weight,1.8m height"
+		},
+		"player10": {
+			"key": "0",
+			"dir": "player10",
+			"description": "blue jersey with a white stripe on a sleeve,number 3 on a jersey,white t-shirt,white shorts,long blue soks,black-white shoes,white skin,8-9cm haircut,dark-brown hair,~80kg weight,1.8m height"
+		},
+		"notClean": {
+			"key": "c",
+			"dir": "not-clean"
+		},
+		"mixed": {
+			"key": "m",
+			"dir": "mixed"
+		},
+		"notPlayer": {
+			"key": "n",
+			"dir": "not-a-player"
+		},
+		"reannotate": {
+			"key": "r",
+			"dir": "reannotate"
+		}
+	}
+}
